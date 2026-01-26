@@ -4,7 +4,8 @@
 let count = 0;
 let numsGenerated = 0;
 
-while (count >= 100) {
+while (count <= 100)
+{
     //generate a random number in [1, 10]
     const num = Math.floor(Math.random() * 10) + 1;
     console.log(num);
