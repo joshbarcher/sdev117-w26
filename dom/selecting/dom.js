@@ -21,3 +21,5 @@ const horror = document.querySelector("#favorite");
 //horror.textContent = "<strong>Hello</strong> world!";
 const maliciousContent = "<script>window.location='https://www.google.com'</script>";
 horror.innerHTML = maliciousContent;
+
+const items = horror.querySelectorAll("li");
