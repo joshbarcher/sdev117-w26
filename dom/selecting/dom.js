@@ -1,4 +1,19 @@
 
+const button = document.querySelector("button");
+const body = document.body;
+
+button.onclick = () => {
+    console.log(button.textContent);
+
+    if (button.textContent === "Nightmode") {
+        button.textContent = "Brightmode";
+        body.className = "night-mode";
+    } else {
+        button.textContent = "Nightmode";
+        body.className = "bright-mode";
+    }
+}
+
 //select multiple elements
 const elems = document.querySelectorAll("ul ul > li");
 console.log(elems);

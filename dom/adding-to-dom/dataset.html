@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Emissions Data</title>
+        <link rel="stylesheet" href="table.css">
+    </head>
+    <body>
+        <h1>Emissions Data</h1>
+        <hr>
+
+        <h2>Enter Data</h2>
+        <form>
+            <section>
+                <label>Category</label>
+                <input type="text">
+            </section>
+            <section>
+                <label>Approx. share</label>
+                <input type="text">
+            </section>
+            <section>
+                <label>Common sources</label>
+                <input type="text">
+            </section>
+            <section>
+                <label>Example reduction</label>
+                <input type="text">
+            </section>
+            <button>Add To Table!</button>
+        </form>
+
+        <h2>View the Data</h2>
+        <table id="emissions-table">
+            <thead>
+                <tr>
+                    <th scope="col">Category</th>
+                    <th scope="col">Approx. share</th>
+                    <th scope="col">Common sources</th>
+                    <th scope="col">Example reduction</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Transportation</td>
+                    <td>~28%</td>
+                    <td>Cars, trucks, aviation</td>
+                    <td>EVs + transit + efficiency</td>
+                </tr>
+                <tr>
+                    <td>Electric power</td>
+                    <td>~25%</td>
+                    <td>Coal/gas power plants</td>
+                    <td>Renewables + grid upgrades</td>
+                </tr>
+                <tr>
+                    <td>Industry</td>
+                    <td>~23%</td>
+                    <td>Steel, cement, chemicals</td>
+                    <td>Process changes + electrify heat</td>
+                </tr>
+                <tr>
+                    <td>Commercial</td>
+                    <td>~7%</td>
+                    <td>Offices, retail, services</td>
+                    <td>HVAC + lighting upgrades</td>
+                </tr>
+                <tr>
+                    <td>Residential</td>
+                    <td>~6%</td>
+                    <td>Home heating, appliances</td>
+                    <td>Heat pumps + insulation</td>
+                </tr>
+                <tr>
+                    <td>Agriculture</td>
+                    <td>~10%</td>
+                    <td>Livestock, soils, fertilizer</td>
+                    <td>Methane controls + precision ag</td>
+                </tr>
+                <tr>
+                    <td>Land use & forests</td>
+                    <td>Net sink</td>
+                    <td>Forest growth vs. loss</td>
+                    <td>Reforestation + avoided loss</td>
+                </tr>
+                <tr>
+                    <td>Waste</td>
+                    <td>~2%</td>
+                    <td>Landfills, wastewater</td>
+                    <td>Landfill methane capture</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <script src="table.js"></script>
+    </body>
+</html>

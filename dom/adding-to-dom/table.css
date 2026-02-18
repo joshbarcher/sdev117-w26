@@ -1,0 +1,45 @@
+
+html {
+    background-color: rgb(22, 22, 22);
+    color: white;
+}
+
+body {
+    background-color: rgb(52, 52, 52);
+    width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    margin-top: 0;
+    padding-top: 10px;
+}
+
+#emissions-table {
+    border-collapse: collapse;
+
+    tr, td, th {
+        border: 1px solid white;
+    }
+    
+    td, th {
+        padding: 6px;
+    }
+    
+    th {
+        text-align: left;
+    }
+
+    thead {
+        background-color: rgb(34, 1, 47);
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: rgb(80, 46, 80);
+    }
+
+    tbody tr:nth-child(odd) {
+        background-color: rgb(96, 61, 96);
+    }
+}
