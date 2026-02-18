@@ -43,3 +43,37 @@ h1 {
         background-color: rgb(96, 61, 96);
     }
 }
+
+form {
+
+    section {
+        padding: 6px;
+    }
+
+    label, button {
+        width: 150px;
+        display: inline-block;
+    }
+
+    input {
+        background-color: rgb(42, 42, 42);
+        color: white;
+        border: 1px solid white;
+        border-radius: 4px;
+        padding: 4px;
+    }
+
+    button {
+        color: rgb(229, 207, 229);
+        background-color: rgb(96, 61, 96);
+        color: white;
+        border: 1px solid white;
+        border-radius: 4px;
+        padding: 4px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: rgb(122, 78, 122);
+    }
+}
