@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Card Grid + Event Bubbling</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="events.js"></script>
+</head>
+<body>
+    <main class="grid" id="grid">
+        <article class="card" data-open="false" data-id="A-102">
+            <div class="top">
+                <div class="thumb">🧩</div>
+                <div>
+                    <div class="title-row">
+                        <h3 class="title">Puzzle Pack</h3>
+                        <div class="actions">
+                            <button class="btn fav-btn" type="button">⭐</button>
+                            <span class="pill">ID: A-102</span>
+                        </div>
+                    </div>
+                    <p class="summary">A collection of colorful logic and picture puzzles designed for quick play sessions.</p>
+                </div>
+            </div>
+
+            <div class="details">
+                <div><strong>Hidden:</strong> Stock: 14</div>
+                <div><strong>Hidden:</strong> Warehouse: Tacoma</div>
+                <div><strong>Hidden:</strong> Cost: $7.20</div>
+            </div>
+        </article>
+
+        <article class="card" data-open="false" data-id="B-233">
+            <div class="top">
+                <div class="thumb">🎧</div>
+                <div>
+                    <div class="title-row">
+                        <h3 class="title">Headphones</h3>
+                        <div class="actions">
+                            <button class="btn fav-btn" type="button">⭐</button>
+                            <span class="pill">ID: B-233</span>
+                        </div>
+                    </div>
+                    <p class="summary">Comfortable over-ear headphones built for everyday listening.</p>
+                </div>
+            </div>
+
+            <div class="details">
+                <div><strong>Hidden:</strong> Stock: 3</div>
+                <div><strong>Hidden:</strong> Warehouse: Kent</div>
+                <div><strong>Hidden:</strong> Cost: $18.50</div>
+            </div>
+        </article>
+
+        <article class="card" data-open="false" data-id="C-019">
+            <div class="top">
+                <div class="thumb">📦</div>
+                <div>
+                    <div class="title-row">
+                        <h3 class="title">Shipping Box</h3>
+                        <div class="actions">
+                            <button class="btn fav-btn" type="button">⭐</button>
+                            <span class="pill">ID: C-019</span>
+                        </div>
+                    </div>
+                    <p class="summary">A durable corrugated cardboard box used for storing or transporting items safely.</p>
+                </div>
+            </div>
+
+            <div class="details">
+                <div><strong>Hidden:</strong> Stock: 62</div>
+                <div><strong>Hidden:</strong> Warehouse: Auburn</div>
+                <div><strong>Hidden:</strong> Cost: $1.10</div>
+            </div>
+        </article>
+    </main>
+
+    <div class="log" id="log"></div>
+</body>
+</html>
