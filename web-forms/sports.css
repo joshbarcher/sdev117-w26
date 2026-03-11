@@ -1,0 +1,43 @@
+html {
+    background-color: rgb(7, 7, 7);
+}
+
+body {
+    background-color: rgb(76, 49, 62);
+    width: 800px;
+    margin: 0 auto;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+.top, .bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.form-group {
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+    gap: 6px;
+
+    label {
+        text-align: left;
+    }
+}
+
+.two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+}
+
+button {
+    margin-top: 20px;
+}

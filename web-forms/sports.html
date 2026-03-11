@@ -4,54 +4,104 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sports Equipment Signup!</title>
+        <link rel="stylesheet" href="sports.css">
     </head>
     <body>
         <h1>Sports Equipment Signup!</h1>
-        <form>
-            <!-- name -->
-            <section class="form-group">
-                <label for="fullname">Name</label>
-                <input type="text" id="fullname" name="users-name" 
-                       required minlength="2" maxlength="30">
-            </section>
+        <form method="post">
+            <div class="top">
+                <div class="left">
+                    <!-- name -->
+                    <section class="form-group">
+                        <label for="fullname">Name</label>
+                        <input type="text" id="fullname" name="users-name" 
+                            required minlength="2" maxlength="30">
+                    </section>
 
-            <!-- age -->
-            <section class="form-group">
-                <label for="age">Age</label>
-                <input type="number" id="age" name="users-age" 
-                       required min="1" max="100">
-            </section>
+                    <!-- age -->
+                    <section class="form-group">
+                        <label for="age">Age</label>
+                        <input type="number" id="age" name="users-age" 
+                            required min="1" max="100">
+                    </section>
 
-            <!-- email -->
-            <section class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="users-email" 
-                       required>
-            </section>
+                    <!-- email -->
+                    <section class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="users-email" 
+                            required>
+                    </section>
+                </div>
+                <div class="right">
+                    <!-- when did you hear about us -->
+                    <section class="form-group">
+                        <label for="hear-about">First heard</label>
+                        <input type="date" id="hear-about" name="users-hear-about" 
+                            required>
+                    </section>
 
-            <!-- when did you hear about us -->
-            <section class="form-group">
-                <label for="hear-about">When did you hear about us?</label>
-                <input type="date" id="hear-about" name="users-hear-about" 
-                       required>
-            </section>
+                    <!-- type of sports equipment -->
+                    <section class="form-group">
+                        <label for="type">Equipment type</label>
+                        <select id="type" name="equipment-type" required>
+                            <option value="ftbl">Football</option>
+                            <option value="socc">Soccer</option>
+                            <option value="tenn" selected>Tennis</option>
+                            <option value="pkbl">Pickleball</option>
+                            <option value="hock">Hockey</option>
+                            <option value="bsbl">Baseball</option>
+                            <option value="bkbl">Basketball</option>
+                            <option value="voly">Volleyball</option>
+                        </select>
+                    </section>
 
-            <!-- type of sports equipment -->
-            <section class="form-group">
-                <label for="type">Equipment type</label>
-                <select id="type" name="equipment-type" required>
-                    <option value="ftbl">Football</option>
-                    <option value="socc">Soccer</option>
-                    <option value="tenn">Tennis</option>
-                    <option value="pkbl">Pickleball</option>
-                    <option value="hock">Hockey</option>
-                    <option value="bsbl">Baseball</option>
-                    <option value="bkbl">Basketball</option>
-                    <option value="voly">Volleyball</option>
-                </select>
-            </section>
+                    <!-- phone number -->
+                    <section class="form-group">
+                        <label for="phone">Cell Phone</label>
+                        <div class="two-col">
+                            <input type="text" id="phone" name="users-phone" 
+                                required pattern="\d{3}-\d{3}-\d{4}">
+                            <span>xxx-yyy-zzzz</span>
+                        </div>
+                    </section>
+                </div>
+            </div>
 
-            <!-- phone number -->
+            <div class="bottom">
+                <!-- radio buttons -->
+                <fieldset class="button-group">
+                    <legend>Payment Type</legend>
+                    <div>
+                        <input type="radio" value="cc" name="users-payment">
+                        <label>Credit</label>
+                    </div>
+                    <div>
+                        <input type="radio" value="cash" name="users-payment" checked>
+                        <label>Cash</label>
+                    </div>
+                    <div>
+                        <input type="radio" value="check" name="users-payment">
+                        <label>Check</label>
+                    </div>
+                </fieldset>
+
+                <!-- checkboxes -->
+                <fieldset class="button-group">
+                    <legend>Terms of Service</legend>
+                    <div>
+                        <input type="checkbox" id="tos" name="terms-of-service" required>
+                        <label for="tos">Agree to terms of service</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="can-email" name="can-email">
+                        <label for="can-email">Can our partners email you?</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="can-newsletter" name="newsletter">
+                        <label for="newsletter">Newsletter?</label>
+                    </div>
+                </fieldset>
+            </div>
 
             <button>Sign up!</button>
         </form>
