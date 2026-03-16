@@ -36,8 +36,17 @@ h1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 6px;
+
+    input {
+        width: 95%;
+    }
 }
 
 button {
     margin-top: 20px;
+}
+
+.error {
+    color: rgb(255, 202, 104);
+    display: none; /* hide at first */
 }
