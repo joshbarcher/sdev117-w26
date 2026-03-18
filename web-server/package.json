@@ -1,0 +1,22 @@
+{
+  "name": "web-server",
+  "version": "1.0.0",
+  "description": "A web server to serve up files",
+  "keywords": [
+    "web",
+    "server",
+    "node",
+    "express",
+    "forms"
+  ],
+  "license": "ISC",
+  "author": "Josh Archer",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

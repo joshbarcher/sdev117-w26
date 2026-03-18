@@ -1,0 +1,13 @@
+html {
+    background-color: bisque;
+}
+
+body {
+    background-color: rgb(88, 52, 29);
+    width: 1000px;
+    margin: auto;
+}
+
+img {
+    width: 400px;
+}
